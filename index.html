@@ -794,8 +794,7 @@
                                 class="input-box--comments"
                             ></textarea>
                         </div>
-                        <div class="checkbox">
-                            <label for="checkbox-consent"></label>
+                        <label class="checkbox" for="checkbox-consent">
                             <input
                                 class="checkbox-input"
                                 type="checkbox"
@@ -805,17 +804,24 @@
                             />
                             <div class="checkbox-border">
                                 <svg
-                                    class="checkbox-border--icon"
+                                    class="checkbox-icon--checked"
                                     width="16px"
                                     height="15px"
                                 >
                                     <use
-                                        width="12px"
-                                        height="9px"
-                                        href="./images/icons.svg#icon-vector"
+                                        href="./images/icons.svg#icon-icon-check"
                                     ></use>
                                 </svg>
                             </div>
+                            <svg
+                                class="checkbox-icon--unchecked"
+                                width="16px"
+                                height="15px"
+                            >
+                                <use
+                                    href="./images/icons.svg#icon-vector"
+                                ></use>
+                            </svg>
                             <span class="checkbox-text"
                                 >Oświadczam iż akceptuję
                                 <a href="#" class="checkbox-text-link"
@@ -826,7 +832,7 @@
                                     >Politykę Prywatności.</a
                                 ></span
                             >
-                        </div>
+                        </label>
                         <div>
                             <button type="submit" class="submit-btn">
                                 Wyślij
