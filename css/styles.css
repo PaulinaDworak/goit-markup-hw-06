@@ -28,16 +28,16 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
-.box-header {
+.page-header {
     border-bottom: 1px solid #ececec;
     padding: 24px 0 25px;
 }
-.box-header > .container {
+.page-header > .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.header-navigation {
+.page-header_navigation {
     display: flex;
     align-items: center;
     gap: 93px;
@@ -53,7 +53,7 @@ img {
     display: inline-block;
 }
 
-.logo-black {
+.logo_page-header {
     color: var(--logo-color-black);
 }
 .logo-white {
@@ -65,7 +65,7 @@ img {
     display: flex;
     gap: 46px;
 }
-.site-nav-menu {
+.site-nav_element {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.17;
@@ -77,10 +77,10 @@ img {
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 }
-.is-active {
+.site-nav_element--is-active {
     color: #2196f3;
 }
-.is-active::after {
+.site-nav_element--is-active::after {
     position: absolute;
     width: 53px;
     height: 4px;
@@ -91,12 +91,12 @@ img {
     justify-content: center;
     display: flex;
 }
-.site-nav-menu:hover,
-.site-nav-menu:focus {
+.site-nav_element:hover,
+.site-nav_element:focus {
     color: #2196f3;
 }
-.site-nav-menu:hover::after,
-.site-nav-menu:focus::after {
+.site-nav_element:hover::after,
+.site-nav_element:focus::after {
     position: absolute;
     width: 100%;
     height: 4px;
@@ -108,11 +108,11 @@ img {
     display: flex;
 }
 
-.email {
+.contact--email {
     margin-right: 50px;
 }
 
-.contact {
+.address {
     font-style: normal;
     color: var(--logo-color-white);
     text-decoration: none;
@@ -122,7 +122,7 @@ img {
     cursor: pointer;
     letter-spacing: 0.03em;
 }
-.link {
+.contact {
     font-size: 14px;
     font-weight: 500;
     font-style: normal;
@@ -135,8 +135,8 @@ img {
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link:hover,
-.link:focus {
+.contact:hover,
+.contact:focus {
     color: var(--blue-accent);
     fill: #2196f3;
 }
@@ -260,7 +260,7 @@ img {
     background-position: center;
 }
 
-.services h1 {
+.services_header {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3636;
@@ -270,7 +270,7 @@ img {
     padding-top: 200px;
 }
 
-.services button {
+.services_btn {
     font-weight: 700;
     line-height: 1.875;
     background-color: var(--blue-accent);
@@ -291,10 +291,10 @@ img {
     list-style: none;
     gap: 30px;
 }
-.article-icons-box {
+.article-icons_box {
     margin-bottom: 30px;
 }
-.article-icon {
+.article-icons_item {
     background-color: #f5f4fa;
     padding: 25px 100px;
     border-radius: 4px;
